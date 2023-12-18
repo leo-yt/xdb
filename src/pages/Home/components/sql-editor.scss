@@ -1,0 +1,18 @@
+.sql-editor-container {
+  padding: 10px;
+  .sc-imjvh9-0.fhjbLT {
+    display: none;
+  }
+  .run-btn {
+    float: right;
+    margin-top: 10px;
+  }
+
+}
+
+#root.dark {
+  .cm-editor {
+    background: rgb(20,20,20);
+    color: #fff;
+  }
+}

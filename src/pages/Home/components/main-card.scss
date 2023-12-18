@@ -1,0 +1,66 @@
+.main-card-container {
+  display: flex;
+  justify-content: space-between;
+  .aside {
+    width: 325px;
+    border-right: 1px solid #aaa;
+    height: calc(100vh - 10px);
+    padding: 10px 20px 0 20px;
+    position: relative;
+
+    .database-select {
+      display: flex;
+      .add-btn {
+        margin-left: 10px;
+      }
+    }
+
+    .tables-tree {
+      margin-top: 10px;
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      .entities {
+        display: flex;
+        justify-content: space-between;
+        .add-btn {
+          font-size: 20px;
+          cursor: pointer;
+          user-select: none;
+          width: 20px;
+          text-align: center;
+          &:active {
+            background: #eee;
+            border-radius: 4px;
+          }
+          &:hover {
+            color: rgba(0,0,0,.8);
+          }
+        }
+      }
+    }
+    .disconnect-btn {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+  .sql-panel {
+    flex: 1;
+    width: calc(100vw - 475px);
+    .input-area {
+      height: 50vh;
+    }
+    .table-area {
+      overflow-x: auto;
+      height: 50vh;
+      width: 100%;
+      .ant-table {
+        table-layout: fixed;
+      }
+      .ant-table-thead th,
+      .ant-table-tbody td {
+        width: auto;
+        min-width: 100px;
+      }
+    }
+  }
+}
