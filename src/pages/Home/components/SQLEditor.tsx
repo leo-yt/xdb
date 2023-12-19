@@ -11,13 +11,7 @@ const defaultValue = [
   {
     type: 'codeblock',
     language: 'sql',
-    code1: 'select * from test_users;\n' +
-      'select * from tasks;',
-    code: 'create table `users` (\n' +
-      '`id` int unsigned not null auto_increment,\n' +
-      ' `name` varchar(255) not null,\n' +
-      '  primary key (`id`)\n' +
-      '  ) engine=InnoDB default charset=utf8mb3;',
+    code: '',
     children: [{ text: '' }]
   }
 ]

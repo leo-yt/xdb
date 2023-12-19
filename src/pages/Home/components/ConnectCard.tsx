@@ -19,13 +19,8 @@ const ConnectCard = (props: IProps) => {
   const { onSubmit } = props;
   const onFinishFailed = (errorInfo: any) => {};
 
-  const v = {
+  const initialValues = {
     connectType: 'MySQL',
-    user: 'root',
-    password: '12345678',
-    host: '127.0.0.1',
-    port: '3306',
-    database: 'test'
   }
 
   return (
@@ -38,7 +33,7 @@ const ConnectCard = (props: IProps) => {
           onFinish={onSubmit}
           onFinishFailed={onFinishFailed}
           autoComplete="off"
-          initialValues={v}
+          initialValues={initialValues}
         >
           <Form.Item<FieldType>
             label="类型"

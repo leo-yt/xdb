@@ -12,7 +12,7 @@ const Icon = (props: IProps) => {
   const { type, onClick, style } = props;
 
   const Ele= createFromIconfontCN({
-    scriptUrl: '//at.alicdn.com/t/c/font_4366642_lxuexky0pwm.js', // 在 iconfont.cn 上生成
+    scriptUrl: 'https://at.alicdn.com/t/c/font_4366642_lxuexky0pwm.js', // 在 iconfont.cn 上生成
   });
 
   return (

@@ -4,8 +4,10 @@ require('./db');
 
 const createWindow = () => {
 	const win = new BrowserWindow({
-		width: 1000,
-		height: 800,
+		title: 'NVM-Desktop',
+		width: 1024,
+		height: 728,
+		center: true,
 		webPreferences: {
 			preload: path.join(__dirname, 'preload.js')
 		},
