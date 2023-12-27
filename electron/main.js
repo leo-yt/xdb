@@ -4,7 +4,7 @@ require('./db');
 
 const createWindow = () => {
 	const win = new BrowserWindow({
-		title: 'NVM-Desktop',
+		title: 'X-DB',
 		width: 1024,
 		height: 728,
 		center: true,
